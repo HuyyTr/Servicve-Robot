@@ -1,0 +1,11 @@
+#goal definition
+uint8 SQUARE = 0
+uint8 CIRCLE = 1
+
+uint8 shape
+uint8 size
+bool clockwise
+uint8 loop_number
+---
+#result definition
+geometry_msgs/Point[] verticals

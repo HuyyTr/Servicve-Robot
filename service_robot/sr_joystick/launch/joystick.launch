@@ -1,0 +1,8 @@
+<launch>
+    <arg name="joy_dev" default="/dev/input/js0" />
+    <arg name="config_filepath" default="$(find sr_joystick)/config/xbox_config.yaml" />
+    <include file="$(find teleop_twist_joy)/launch/teleop.launch">
+        <arg name="joy_dev" value="$(arg joy_dev)"/>
+        <arg name="config_filepath" value="$(arg config_filepath)"/>
+    </include>
+</launch>

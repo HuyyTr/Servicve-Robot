@@ -1,0 +1,9 @@
+<launch>
+    <arg name="arduino_port" default="/dev/ttyUSB1"/>
+    <arg name="arduino_baud" default="115200"/>
+
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
+        <param name="port" value="$(arg arduino_port)" />
+        <param name="baud" value="$(arg arduino_baud)" />
+    </node>
+</launch>

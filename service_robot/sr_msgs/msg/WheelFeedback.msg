@@ -1,0 +1,3 @@
+#goal definition
+float64 left_wheel_speed_feedback
+float64 right_wheel_speed_feedback
